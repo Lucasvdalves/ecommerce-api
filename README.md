@@ -1,30 +1,53 @@
-# Ecommerce API
+# 🛒 Ecommerce API
 
-## Descrição
-Este projeto é uma API para um sistema de e-commerce, construído com Spring Boot. Ele fornece endpoints para realizar operações CRUD (Create, Read, Update, Delete) em produtos.
+## 📌 About the Project
+This project is a RESTful API developed with Java and Spring Boot to simulate the backend of an ecommerce platform. It handles products, categories, and basic cart logic, enabling developers to integrate a simple ecommerce service.
 
-## Tecnologias Utilizadas
+## 💡 Features
+- CRUD operations for products and categories
+- Add/remove products to/from a simulated shopping cart
+- Basic input validation
+- In-memory database (H2)
+
+## 🛠️ Technologies Used
+- Java 17
 - Spring Boot
 - Spring Data JPA
-- Swagger
+- H2 Database
 - Maven
+- Lombok
 
-## Instalação e Execução
-1. Clone este repositório.
-2. Certifique-se de ter o Maven instalado em seu sistema.
-3. Navegue até o diretório raiz do projeto.
-4. Execute o seguinte comando para compilar o projeto:
-5. Depois que a compilação for bem-sucedida, inicie o servidor Spring Boot com o seguinte comando:
-6. A API estará disponível em `http://localhost:8080`.
+## 📁 Folder Structure
+```
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com.ecommerce
+│   │   └── resources
+│   │       └── application.properties
+```
 
-## Documentação da API
-A documentação da API pode ser encontrada em `http://localhost:8080/swagger-ui/index.html`.
+## 🚀 Getting Started
+1. Clone the repository
+2. Open the project in your IDE
+3. Run `EcommerceApiApplication.java`
 
-## Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request.
+```bash
+git clone https://github.com/Lucasvdalves/ecommerce-api.git
+```
 
-## Autor
-Lucas Damasceno
+## 🔍 API Endpoints
+- `GET /products`
+- `POST /products`
+- `PUT /products/{id}`
+- `DELETE /products/{id}`
+- `GET /categories`
 
-## Licença
-Este projeto está licenciado sob a [Licença XYZ](link-da-licenca).
+## 🎯 Future Improvements
+- Integrate with frontend
+- Connect to a persistent database
+- Add payment processing logic
+
+## 📄 License
+MIT License
+
